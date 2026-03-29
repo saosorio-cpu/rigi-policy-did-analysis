@@ -24,14 +24,16 @@ Additionally, this project:
 
 ## Regression results
 
-* The estimated treatment effect is positive for firms in the treatment group, following the RIGI policy
-* Statistical significance depends on the choice of standard error specification
+* We get a positive estimated treatment effect, which means that treated firms experienced higher returns following RIGI
+* Caveat: Statistical significance depends on the choice of standard error specification, results should be taken cautiously 
 * A placebo test yields no significant effect, supporting the timing-based interpretation
-* Results are sensitive to modeling assumptions and should be interpreted cautiously
 
-## Interpretation
+## Parallel Trends and Visualization
 
-The positive interaction coefficient suggests that treated firms experienced higher returns after the policy relative to controls. However, inference is not fully robust: the result is statistically significant under clustered standard errors but not under non-robust errors. Given the panel structure, clustering is appropriate, but the small number of firms limits the reliability of clustered inference.
+* Examines validity of the DiD model by visualizing returns for treatment and control firms prior to the RIGI date
+* Small spike can be associated with the election of Javier Milei in Argentina
+* Otherwise, the two test groups follow nearly identical trends prior to RIGI
+* Finally, we visualize cumulative returns following RIGI, which provides an illustration of the estimated treatment effect over time
 
 ## Limitations
 
@@ -43,7 +45,7 @@ The positive interaction coefficient suggests that treated firms experienced hig
 
 ## Files
 
-* `rigi_policy_did_analysis.ipynb`: complete notebook with data preparation, regression analysis, placebo testing, and interpretation
+* `rigi_policy_did_analysis.ipynb`: complete notebook with data prep, regression analysis, placebo testing, and interpretation
 
 ## Skills
 
@@ -52,7 +54,7 @@ The positive interaction coefficient suggests that treated firms experienced hig
 * Causal inference
 * Difference-in-Differences
 * Regression analysis
-* Robustness checks (placebo testing, alternative standard errors)
+* Robustness checks (placebo testing, standard error specifications)
 * Data visualization
 
 ## Author
